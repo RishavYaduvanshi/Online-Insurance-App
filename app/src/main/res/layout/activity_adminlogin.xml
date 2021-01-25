@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".adminlogin">
+
+
+    <EditText
+        android:id="@+id/adname"
+        android:layout_width="283dp"
+        android:layout_height="41dp"
+        android:background="#00FFFFFF"
+        android:ems="10"
+        android:hint="admin"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#090909"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.515"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/adpass"
+        android:layout_width="285dp"
+        android:layout_height="46dp"
+        android:background="#00FFFFFF"
+        android:ems="10"
+        android:hint="pass"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#0B0B0B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.663"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/adlog"
+        android:layout_width="159dp"
+        android:layout_height="42dp"
+        android:background="#00FFFFFF"
+        android:text="Login"
+        android:textColor="#0E0E0E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.799" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.146"
+        app:srcCompat="@drawable/logo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

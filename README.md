@@ -5,14 +5,11 @@ Flutter representation of a full Insurance app UI KIT.
 Star⭐ the repo if you like what you see😉.
 
 
-## 📸 ScreenShots
-<img src="Img/res.jpg"/>
-
-**Some screenshots below**
+## 📸 ScreenShots 
 <br>
 <img src="Img/1.jpg" width="400">
-<img src="Img/2.jpg" width="400">
 <img src="Img/3.jpg" width="400">
+<img src="Img/2.jpg" width="400">
 <img src="Img/4.jpg" width="400">
 <img src="Img/5.jpg" width="400">
 <img src="Img/6.jpg" width="400">

@@ -10,14 +10,14 @@ Star⭐ the repo if you like what you see😉.
 
 **Some screenshots below**
 <br>
-<img src="Img/1.png" width="400">
-<img src="Img/2.png" width="400">
-<img src="Img/3.png" width="400">
-<img src="Img/4.png" width="400">
-<img src="Img/5.png" width="400">
-<img src="Img/6.png" width="400">
-<img src="Img/7.png" width="400">
-<img src="Img/8.png" width="400">
-<img src="Img/9.png" width="400">
-<img src="Img/10.png" width="400">
-<img src="Img/11.png" width="400">
+<img src="Img/1.jpg" width="400">
+<img src="Img/2.jpg" width="400">
+<img src="Img/3.jpg" width="400">
+<img src="Img/4.jpg" width="400">
+<img src="Img/5.jpg" width="400">
+<img src="Img/6.jpg" width="400">
+<img src="Img/7.jpg" width="400">
+<img src="Img/8.jpg" width="400">
+<img src="Img/9.jpg" width="400">
+<img src="Img/10.jpg" width="400">
+<img src="Img/11.jpg" width="400">

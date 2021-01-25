@@ -7,6 +7,7 @@ Star⭐ the repo if you like what you see😉.
 
 ## 📸 ScreenShots 
 <br>
+<br>
 <img src="Img/1.jpg" width="400">|<img src="Img/3.jpg" width="400">
 <img src="Img/2.jpg" width="400">|<img src="Img/4.jpg" width="400">
 <img src="Img/5.jpg" width="400">|<img src="Img/6.jpg" width="400">

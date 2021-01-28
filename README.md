@@ -1,6 +1,6 @@
 # Online-Insurance-App
 
-Flutter representation of a full Insurance app UI KIT.
+Android Studio representation of a full Insurance app UI KIT.
 
 Star⭐ the repo if you like what you see😉.
 

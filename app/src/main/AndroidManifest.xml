@@ -1,56 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.insurance">
-
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    package="com.rishavyaduvanshi.online_insurance_app">
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="Insurance Application"
+        android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name="com.example.insurance.Splash">
+        android:theme="@style/Theme.OnlineInsurance">
+
+        <activity android:name=".Splash"
+            android:exported="true">
             <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
-        </activity>
-        <activity android:name="com.example.insurance.claimpage" />
-        <activity
-            android:name="com.example.insurance.claim"
-            android:label="Claim" />
-        <activity
-            android:name="com.example.insurance.Medical_Insur"
-            android:label="Medical Insurance" />
-        <activity
-            android:name="com.example.insurance.Phone_Insur"
-            android:label="Phone Insurance" />
-        <activity
-            android:name="com.example.insurance.Vehilcle_Insur"
-            android:label="Vehicle Insurance " />
-        <activity android:name="com.example.insurance.adminlogin" />
-        <activity
-            android:name="com.example.insurance.admin"
-            android:label="Admin Space" />
-        <activity
-            android:name="com.example.insurance.home"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name="com.example.insurance.MainActivity"
-            android:label="Create Account" />
-        <activity
-            android:name=".ui.LoginActivity"
-            android:label="@string/title_activity_login" />
-        <activity
-            android:name="com.example.insurance.activity_login"
-            android:label="Insurance Application">
-        </activity>
+        <activity android:name=".claimpage"/>
+        <activity android:name=".claim"/>
+        <activity android:name=".Medical_Insur"/>
+        <activity android:name=".Phone_Insur"/>
+        <activity android:name=".Vehilcle_Insur"/>
+        <activity android:name=".adminlogin"/>
+        <activity android:name=".admin"/>
+        <activity android:name=".home"/>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".activity_login"/>
+
     </application>
 
 </manifest>

@@ -1,159 +1,141 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@drawable/background"
     tools:context=".admin">
 
-
-    <EditText
-        android:id="@+id/etname"
+    <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/mybutton"
-        android:ems="10"
-        android:gravity="center_horizontal"
-        android:hint="Enter Username to change"
-        android:inputType="textPersonName"
-        android:padding="4dp"
-        android:textAlignment="center"
-        android:textColor="#101010"
-        android:textColorHint="#0E0E0E"
-        android:textSize="18dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.227" />
+        app:cardCornerRadius="25dp"
+        app:cardElevation="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="#E2E2E2"
+        >
 
-    <EditText
-        android:id="@+id/etpass"
-        android:layout_width="wrap_content"
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="200dp"
+            android:layout_height="180dp"
+            android:src="@drawable/logo" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/mybutton"
-        android:ems="10"
-        android:gravity="center_horizontal"
-        android:hint="Change user's Password"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Enter the User's Name"
+        android:layout_marginTop="20dp"
+        app:endIconMode="clear_text"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etname"/>
+    </com.google.android.material.textfield.TextInputLayout>
 
-        android:inputType="textPersonName"
-        android:padding="4dp"
-        android:textAlignment="center"
-        android:textColor="#090909"
-        android:textColorHint="#090909"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etname"
-        app:layout_constraintVertical_bias="0.078" />
-
-    <Button
-        android:id="@+id/adduser"
-        android:layout_width="wrap_content"
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/mybutton"
-        android:padding="4dp"
-        android:text="Add user"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Enter the password to change"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        app:endIconMode="clear_text"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
 
-        android:textColor="#D32F2F"
-        app:layout_constraintBottom_toTopOf="@+id/deluser"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.576"
-        app:layout_constraintStart_toEndOf="@+id/edituser"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.906" />
+            android:id="@+id/etpass"/>
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
-        android:id="@+id/showuser"
-        android:layout_width="wrap_content"
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/mybutton"
-        android:padding="4dp"
-        android:text="Show all users"
-        android:textColor="#FF9800"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.118"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edituser"
-        app:layout_constraintVertical_bias="0.175"
-        tools:ignore="MissingConstraints" />
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Enter the Unique ID"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        app:endIconMode="clear_text"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etid"/>
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <EditText
-        android:id="@+id/etid"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/mybutton"
-        android:ems="10"
-        android:gravity="center_horizontal"
-        android:hint="User Unique Id"
-        android:inputType="textPersonName"
-        android:padding="4dp"
-        android:textAlignment="center"
-        android:textColor="#090909"
-        android:textColorHint="#050505"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etpass"
-        app:layout_constraintVertical_bias="0.103" />
+        android:layout_marginTop="20dp"
+        >
 
-    <Button
-        android:id="@+id/deluser"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/mybutton"
-        android:padding="4dp"
-        android:text="Delete user's account"
-        android:textColor="#00796B"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.878"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.722" />
+        <Button
+            android:id="@+id/adduser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_alignParentStart="true"
+            android:text="Add user"
+            android:layout_marginStart="20dp"
+            />
+        <Button
+            android:id="@+id/showuser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show users"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+             />
+        <Button
+            android:id="@+id/deluser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            />
+        <Button
+            android:id="@+id/edituser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_centerInParent="true"
+            android:text="edit user's details"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            />
 
-    <Button
-        android:id="@+id/edituser"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/mybutton"
-        android:padding="4dp"
-        android:text="edit user's details"
-        android:textColor="#512DA8"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.118"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.572" />
+        <Button
+            android:id="@+id/back"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="logout" />
+    </RelativeLayout>
 
-    <Button
-        android:id="@+id/back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="76dp"
-        android:background="@drawable/mybutton"
-        android:padding="4dp"
-        android:text="logout"
-        android:textColor="#044AFD"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/showuser"
-        app:layout_constraintVertical_bias="1.0" />
 
-    <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="200dp"
-        android:layout_height="180dp"
 
-        app:layout_constraintBottom_toTopOf="@+id/back"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/logo"
-        tools:layout_editor_absoluteX="110dp"
-        tools:ignore="MissingConstraints" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</LinearLayout>

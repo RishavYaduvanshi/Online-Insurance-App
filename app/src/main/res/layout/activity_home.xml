@@ -1,169 +1,189 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@drawable/background"
     tools:context=".home">
 
 
-    <Button
-        android:id="@+id/personalbtn"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/l1"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/wellcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text=""
+            android:background="#00FFFFFF"
+            android:textColor="#1C1C1C"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            />
+        <TextView
+            android:id="@+id/currins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:background="#00FFFFFF"
+            android:text=""
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textColor="#1BC192"
+            android:textSize="24sp"
+            />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="22dp"
+            app:cardElevation="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            app:cardBackgroundColor="#E4F1FF"
+            android:layout_marginEnd="20dp"
+            >
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               >
+               <ImageView
+                   android:id="@+id/imageView7"
+                   android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:layout_marginStart="30dp"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginBottom="10dp"
+                   app:srcCompat="@drawable/phone" />
+               <Button
+                   android:id="@+id/phonebtn"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:padding="4dp"
+                   android:layout_marginStart="20dp"
+                   android:layout_gravity="center"
+                   android:text="phone insurance"
+                   android:textColor="#303F9F"
+                   style="@style/Widget.MaterialComponents.Button.TextButton"
+                   />
+           </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/card2"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:cardElevation="25dp"
+            app:cardBackgroundColor="#F8E2E2"
+            app:cardCornerRadius="25dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:srcCompat="@drawable/med" />
+                <Button
+                    android:id="@+id/personalbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:padding="4dp"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:text="medical insurance"
+
+                    android:textColor="#D32F2F"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:cardBackgroundColor="#E0F6E1"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:srcCompat="@drawable/car" />
+
+                <Button
+                    android:id="@+id/vehiclebtn"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:padding="4dp"
+                    android:text="vehicle insurance"
+                    android:textColor="#56E30F" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="4dp"
-        android:background="@drawable/mybutton"
-        android:text="medical insurance"
-        android:textColor="#D32F2F"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.939"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.468" />
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:id="@+id/l1"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/mydetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Detail" />
 
-    <Button
-        android:id="@+id/phonebtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="4dp"
-        android:background="@drawable/mybutton"
-        android:text="phone insurance"
-        android:textColor="#303F9F"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.741" />
+        <Button
+            android:id="@+id/claim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="claim"
+            />
+        <Button
+            android:id="@+id/logoutbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="logout" />
 
-    <Button
-        android:id="@+id/vehiclebtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="4dp"
-        android:background="@drawable/mybutton"
-        android:text="vehicle insurance"
-        android:textColor="#56E30F"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.049"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.468" />
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/wellcome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="4dp"
-        android:text=""
-        android:background="#00FFFFFF"
-        android:textColor="#1C1C1C"
-        android:textAlignment="center"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.448"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.02"
-        android:gravity="center_horizontal" />
-
-    <TextView
-        android:id="@+id/currins"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="4dp"
-        android:background="#00FFFFFF"
-        android:text=""
-        android:textColor="#1BC192"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.449"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.16" />
-
-    <Button
-        android:id="@+id/logoutbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="4dp"
-        android:background="@drawable/mybutton"
-        android:text="logout"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.898" />
-
-    <Button
-        android:id="@+id/claim"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="4dp"
-        android:background="@drawable/mybutton"
-        android:text="claim"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.078"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.898" />
-
-    <Button
-        android:id="@+id/mydetail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/mybutton"
-        android:padding="4dp"
-        android:text="My Detail"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.948" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="135dp"
-        android:layout_height="106dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.121"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.327"
-        app:srcCompat="@drawable/car" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="135dp"
-        android:layout_height="106dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.905"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.327"
-        app:srcCompat="@drawable/med" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="135dp"
-        android:layout_height="106dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.604"
-        app:srcCompat="@drawable/phone" />
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
